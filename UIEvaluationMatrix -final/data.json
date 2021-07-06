@@ -1,0 +1,248 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "recommendation": "Leverage browsing caching for the cacheble resources",
+      "type": "Server",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images",
+      "points": "Be agreessive with your caching for all static resources",
+      "points1": "Expiry at a minimum of one month (recommended: access plus 1 year), Don't set your caching more than a year in advance!",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif 'access plus 1 year'"
+    },
+    {
+      "id": "2",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "Server",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "3",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "4",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "5",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "CSS",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "6",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "1",
+      "recommendation": "Leverage browsing caching for the cacheble resources",
+      "type": "Server",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images",
+      "points": "Be agreessive with your caching for all static resources",
+      "points1": "Expiry at a minimum of one month (recommended: access plus 1 year), Don't set your caching more than a year in advance!",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif 'access plus 1 year'"
+    },
+    {
+      "id": "2",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "Server",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "3",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "4",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "5",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "CSS",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "6",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "1",
+      "recommendation": "Leverage browsing caching for the cacheble resources",
+      "type": "Server",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images",
+      "points": "Be agreessive with your caching for all static resources",
+      "points1": "Expiry at a minimum of one month (recommended: access plus 1 year), Don't set your caching more than a year in advance!",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif 'access plus 1 year'"
+    },
+    {
+      "id": "2",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "Server",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "3",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "4",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "5",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "CSS",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "6",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "1",
+      "recommendation": "Leverage browsing caching for the cacheble resources",
+      "type": "Server",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images",
+      "points": "Be agreessive with your caching for all static resources",
+      "points1": "Expiry at a minimum of one month (recommended: access plus 1 year), Don't set your caching more than a year in advance!",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif 'access plus 1 year'"
+    },
+    {
+      "id": "2",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "Server",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "3",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "4",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "5",
+      "recommendation": "Minify Javascript to reduce their size",
+      "type": "CSS",
+      "priority": "HIGH",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    },
+    {
+      "id": "6",
+      "recommendation": "Defer parsing JavaScript to reduce blocking of page rendering",
+      "type": "JavaScript",
+      "priority": "MEDIUM",
+      "content": "Every time a browser loads a webpage it has to download all the web files to properly display the page. This includes all the HTML, CSS, JavaScript and images.",
+      "points": "Be agreessive with your caching for all static resources",
+      "find": "Find your .htaccess file in the root of your domain and set our caching parameters to tell the browser what types of files to cache.",
+      "code": "ExpiresByType image/gif access plus 1 year"
+    }
+  ]
+}

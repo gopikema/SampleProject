@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>UI Evaluation Matrix</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+  </head>
+  <body>
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    <!--- Header Panel --->
+    <div class="container-fluid header-bg">
+      <div class="">
+        <div class="pull-left">
+        <div class="item-padding" id="logo"><a href="#"><img class="logo_img" src="images/logo-optum.png" /></a></div>
+      </div>
+      <div class="projectname pull-bottom pull-right">
+        <h3>UI Evaulation Matrix</h3>
+      </div>
+    </div>
+    </div>
+    <!--- Header Panel ends --->
+
+    <!--- Body Panel --->
+    <div class="container-fluid scroll">
+
+      <div class="panel-group pull-bottom">
+
+         <div class="panel panel-default">
+           <div class="panel-header">
+             <h2>Evaluation insights for <span class="ornge-txt">OptumRx</span></h2>
+             <div class="pull-right pull-bottom">
+               <div class="params"><div class="box green-bg"></div><span>Good</span></div>
+               <div class="params"><div class="box orange-bg"></div><span>Moderate</span></div>
+               <div class="params"><div class="box red-bg"></div><span>Poor</span></div>
+             </div>
+           </div>
+           <div class="clearfix"></div>
+           <div class="panel-body">
+             <div class="panel-inside">
+              <!--- insights --->
+              <div class="insights col-md-2 col-sm-2 col-xs-2" onclick="window.location.href='index.html'">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
+                <h4>Performance</h4>
+                <span class="red-txt">45%</span>
+              </div>
+              <div class="insights col-md-2 col-sm-2 col-xs-2" onclick="window.location.href='standards.html'">
+                <i class="fa fa-line-chart" aria-hidden="true"></i><br>
+                <h4>Standards</h4>
+                <span class="orange-txt">65%</span>
+              </div>
+              <div class="insights col-md-2 col-sm-2 col-xs-2" onclick="window.location.href='structure.html'">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
+                <h4>Structure &amp; Design</h4>
+                <span class="green-txt">85%</span>
+              </div>
+              <div class="insights col-md-2 col-sm-2 col-xs-2 active" onclick="window.location.href='content.html'">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i><br>
+                <h4>Content</h4>
+                <span class="green-txt">80%</span>
+              </div>
+              <div class="insights col-md-2 col-sm-2 col-xs-2" onclick="window.location.href='graphics.html'">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
+                <h4>Graphics &amp; Media</h4>
+                <span class="red-txt">30%</span>
+              </div>
+              <div class="insights col-md-2 col-sm-2 col-xs-2" onclick="window.location.href='accessibility.html'">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
+                <h4>Accessibility</h4>
+                <span class="orange-txt">55%</span>
+              </div>
+              <!--- insights --->
+              <div class="clearfix"></div>
+
+              <!--- insights results--->
+              <div class="evalue-results">
+                <h2>Content<span>(List of Parameters - 16)</span></h2>
+                <div class="pull-right pull-bottom">
+                  <div class="params"><div class="lbel">No of CSS files:<span>4</span></div></div>
+                  <div class="params"><div class="lbel">No of JS files:<span>12</span></div></div>
+                  <div class="params"><div class="lbel">No of Images:<span>26</span></div></div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <!--- insights tables--->
+              <div class="col-md-6 grey-bg ">
+                <table class="table table-hover" id="myTooltips">
+                  <thead>
+                    <tr>
+                      <th class="col-md-5">Parameter</th>
+                      <th class="col-md-2">Value</th>
+                      <th class="col-md-3">Recommended</th>
+                      <th class="col-md-2">Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Page Load Time</td>
+                      <td>4 Sec</td>
+                      <td><span class="time">1.5 to 3 Sec</span></td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Size</td>
+                      <td>1.7MB</td>
+                      <td><span class="time">12KB to 2.51 MB</span></td>
+                      <td><span class="rating orange-bg">Medium</span> <a class="test ps" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>6 Sec</td>
+                      <td><span class="time">5 Sec</span></td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Load Time</td>
+                      <td>4 Sec</td>
+                      <td><span class="time">1.5 to 3 Sec</span></td>
+                      <td><span class="rating green-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Size</td>
+                      <td>1.7MB</td>
+                      <td><span class="time">12KB to 2.51 MB</span></td>
+                      <td><span class="rating orange-bg">Poor</span> <a class="test ps" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>6 Sec</td>
+                      <td><span class="time">5 Sec</span></td>
+                      <td><span class="rating orange-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Load Time</td>
+                      <td>4 Sec</td>
+                      <td><span class="time">1.5 to 3 Sec</span></td>
+                      <td><span class="rating green-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>6 Sec</td>
+                      <td><span class="time">5 Sec</span></td>
+                      <td><span class="rating green-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="right" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6 grey-bg mrgn-lft">
+                <table class="table table-hover" id="myTooltips">
+                  <thead>
+                    <tr>
+                      <th class="col-md-8">Parameter</th>
+                      <th class="col-md-2">Value</th>
+                      <th class="col-md-2">Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Render-blocking JS and CSS</td>
+                      <td>False</td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Size</td>
+                      <td>Disabled</td>
+                      <td><span class="rating orange-bg">Medium</span> <a class="test ps" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>No</td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Load Time</td>
+                      <td>No</td>
+                      <td><span class="rating green-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Size</td>
+                      <td>No</td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test ps" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>False</td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Page Load Time</td>
+                      <td>Disabled</td>
+                      <td><span class="rating red-bg">Poor</span> <a class="test plt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fully Load Time</td>
+                      <td>False</td>
+                      <td><span class="rating green-bg">Poor</span> <a class="test flt" href="#" data-toggle="tooltip" data-placement="left" title=" "><i class="fa fa-question-circle" aria-hidden="true"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--- insights tables--->
+              <div class="clearfix"></div>
+              <div class="evalue-results">
+                <h2>Recommendations</h2>
+                <div class="recom-grey-bg col-md-12 grid-top">
+                  <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="tab" href="#generic">Generic Recommendations</a></li>
+                    <li><a data-toggle="tab" href="#other">Other Recommendations</a></li>
+                  </ul>
+                  <div class="tab-content clearfix">
+                    <div id="generic" class="tab-pane active">
+                      <table id="example" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Recommendation</th>
+                                <th>Type</th>
+                                <th>Priority</th>
+
+                            </tr>
+                        </thead>
+                      </table>
+                    </div>
+
+                    <div id="other" class="tab-pane">
+                      <table id="othertable" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Recommendation</th>
+                                <th>Type</th>
+                                <th>Priority</th>
+
+                            </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+         </div>
+       </div>
+
+
+
+
+
+        <!-- <div class="pull-right"><button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-primary">Submit</button></div> -->
+    </div>
+
+    <!--- Body Panel ends --->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery.dataTables.min.js"  type="text/javascript"></script>
+
+    <script>
+    // $(document).ready(function() {
+    //     $('#SrchResult').dataTable();
+    //     $('#SrchResult1').dataTable();
+    // } );
+
+    $(document).ready(function() {
+        $('.ETable').dataTable( {
+            //"bPaginate": false,
+            "bFilter": false,
+            "columnDefs": [ {
+              "targets": 'no-sort',
+              "orderable": false,
+              "order": [],
+
+            //"bInfo": false,
+            //"dom": '<"top"i>rt<"bottom"flp><"clear">'
+            } ]
+        } );
+      } );
+    </script>
+    <!-- <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script> -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#myTooltips a.plt").tooltip({
+            template : '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-head"><h5>Page Load Time</h5><div class="pull-left small"><span class="rating green-bg">GOOD</span><br>< 1.5 Sec</div><div class="pull-left small"><span class="rating orange-bg">MEDIUM</span><br>> 1.5 to 1.8</div><div class="pull-left small"><span class="rating red-bg">Poor</span><br>&nbsp;> 3</div></div><div class="tooltip-inner"></div></div>'
+        });
+        $("#myTooltips a.ps").tooltip({
+            template : '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-head"><h5>Page Size</h5><div class="pull-left small"><span class="rating green-bg">GOOD</span><br>< 500KB </div><div class="pull-left small"><span class="rating orange-bg">MEDIUM</span><br>> 1MB to 2MB</div><div class="pull-left small"><span class="rating red-bg">Poor</span><br>&nbsp;> 2.5MB</div></div><div class="tooltip-inner"></div></div>'
+        });
+        $("#myTooltips a.flt").tooltip({
+            template : '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-head"><h5>Fully Load Time</h5><div class="pull-left small"><span class="rating green-bg">GOOD</span><br>< 2.5 Sec</div><div class="pull-left small"><span class="rating orange-bg">MEDIUM</span><br>> 2.5 to 4</div><div class="pull-left small"><span class="rating red-bg">Poor</span><br>&nbsp;> 5</div></div><div class="tooltip-inner"></div></div>'
+        });
+    });
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+    </script>
+    <style type="text/css">
+  	/*.bs-example{
+      	margin: 200px 100px;
+      }
+      .bs-example a{
+          margin: 25px;
+          font-size: 20px;
+      }*/
+      /* Styles for custom tooltip template */
+      .tooltip-head{
+          color: #fff;
+          background: #000;
+          padding: 5px 10px 5px;
+          border-radius: 4px 4px 0 0;
+          text-align: left;
+          margin-bottom: -2px; /* Hide default tooltip rounded corner from top */
+      }
+     .tooltip, .tooltip-inner{
+         padding:2em;
+      }
+
+  </style>
+
+<!-- expand row table -->
+  <script type="text/javascript">
+  /* Formatting function for row details - modify as you need */
+  function format ( d ) {
+      // `d` is the original data object for the row
+      return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+          '<tr>'+
+
+              '<td colspan="2">'+d.content+', <ul><li>'+d.points+'</li><li>'+d.points1+'</li></ul> '+d.find+' </td>'+
+          '</tr>'+
+          '<tr>'+
+              '<td colspan="2">Code:<span>'+d.code+'</span></td>'+
+          '</tr>'+
+
+      '</table>';
+  }
+
+  $(document).ready(function() {
+
+      var table = $('#example').DataTable( {
+            "ajax": "data.json",
+          "columns": [
+              {
+                  "className":      'details-control',
+                  "orderable":      false,
+                  "data":           null,
+                  "defaultContent": ''
+              },
+              { "data": "recommendation" },
+              { "data": "type" },
+              { "data": "priority" }
+              //{ "data": "salary" }
+          ],
+          "order": [[0, 'asc']]
+      } );
+
+      // Add event listener for opening and closing details
+      $('#example tbody').on('click', 'td.details-control', function () {
+          var tr = $(this).closest('tr');
+          var row = table.row( tr );
+
+          if ( row.child.isShown() ) {
+              // This row is already open - close it
+              row.child.hide();
+              tr.removeClass('shown');
+          }
+          else {
+              // Open this row
+              row.child( format(row.data()) ).show();
+              tr.addClass('shown');
+          }
+      } );
+  } );
+</script>
+<script type="text/javascript">
+/* Formatting function for row details - modify as you need */
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+
+            '<td colspan="2">'+d.content+', <ul><li>'+d.points+'</li><li>'+d.points1+'</li></ul> '+d.find+' </td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td colspan="2">Code: <span>'+d.code+'</span></td>'+
+
+        '</tr>'+
+
+    '</table>';
+}
+
+$(document).ready(function() {
+
+    var table = $('#othertable').DataTable( {
+          "ajax": "data.json",
+        "columns": [
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },
+            { "data": "recommendation" },
+            { "data": "type" },
+            { "data": "priority" }
+            //{ "data": "salary" }
+        ],
+        "order": [[0, 'asc']]
+    } );
+
+    // Add event listener for opening and closing details
+    $('#othertable tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    } );
+} );
+</script>
+  </body>
+</html>
