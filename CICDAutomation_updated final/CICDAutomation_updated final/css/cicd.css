@@ -1,0 +1,30 @@
+.brdr-btm{
+  border-bottom: 1px #ddd solid;
+  margin-bottom: 1em;
+}
+.box, .login, .hiddenContainers{
+  display: none;
+}
+#sortable {
+  list-style-type: none;
+  width: 100%;
+}
+.ui-state-default{
+  background-color: #fff;
+}
+.close{
+	color: red;
+	display: block;
+	position: absolute;
+	right: .4em;
+	font-size: 1.2em;
+	top: -.6em;
+	opacity: 1;
+}
+.headerButtons{vertical-align:middle !important; font-size:.5em !important; font-weight:bold !important;}
+.collapseButtons{vertical-align:middle; font-size:1em; font-weight:bold;}
+.bottomButtons{vertical-align:middle;}
+.modalContainer{height:500px; overflow-y:scroll; overflow-x:none;}
+.modal-header .close {
+    margin-top: 20px;
+}
